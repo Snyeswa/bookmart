@@ -1,4 +1,12 @@
-// version02-getElementById
-var banner = document.getElementById('page-banner');
-var booklist = document.getElementsById('booklist');
-console.log(page-banner, booklist);
+// version03-getElementByTagName
+var titles = document.getElementsById('title');
+
+// console.log(Array.isArray(titles));
+// console.log(Array.isArray(Array.from(titles)));
+
+var lis = document.getElementsById('li');
+
+Array.from(titles).forEach(function(item){
+	console.log(item);
+})
+
