@@ -1,12 +1,11 @@
-// version03-getElementByTagName
-var titles = document.getElementsById('title');
+// version04-getElementByTagName
+var wmf = document.querySelector('#book-list li:nth-child(2).name');
+// console.log(wmf);
+var books = document.querySelector('#book-list li .name');
+// console.log(books);
+books = document.querySelectorAll('#book-list li .name');
+// console.log(books);
 
-// console.log(Array.isArray(titles));
-// console.log(Array.isArray(Array.from(titles)));
-
-var lis = document.getElementsById('li');
-
-Array.from(titles).forEach(function(item){
-	console.log(item);
-})
-
+Array.from(books).forEach(function(book){
+    console.log(book);
+});
