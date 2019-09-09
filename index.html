@@ -4,13 +4,13 @@
 <head>
 <meta charset="utf-8">
 <link href="styles.css" rel="stylesheet"/>
+<script src="app.js"></script>
 <title>JavaScript DOm Version</title>
 </head>
 <body>
 <div id="wrapper">
 <header>
 <div id="page-banner">
-
 <h1 class= "title">Bookmart</h1>
 <p>Books for Learner</p>
 <form id="search-books">
@@ -44,8 +44,21 @@
         <label for="hide">Hide all books</label>
     <input type='text' placeholder="Add a book..."/>
     <button>Add</button>
-</form>
+    </form>
+    <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Content for about tab...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Content for contact tab...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+       </div>
+     </div>
 </div>
-<script src="app.js"></script>
 </body>
 </html>
