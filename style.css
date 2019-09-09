@@ -1,4 +1,4 @@
-/* <!-- version01-Introduction --> */
+/* <!-- version015-Introduction --> */
 body{
 	font-family: Tahoma;
 	color:#444;
@@ -21,7 +21,7 @@ h1, h2{
 	border: 1px soid lightgray;
 }
 
-#page-banner h1, #page-banner p{
+#page-banner{
     background: #eee;
     padding: 10px 0;
 }
@@ -42,6 +42,10 @@ h1, h2{
     color: #444;
 
 }
+#book-list, #add-book, #tabbed-content {
+    margin: 30px;
+}
+
 #book-listing ul, #tabbed-content ul{
     list-style-type: none;
     padding: 0;
@@ -86,6 +90,7 @@ h1, h2{
     box-sizing: border-box;
     width: 300px;
     float: left;
+    clear: both;
 }
 
 #add-book button{
@@ -109,6 +114,14 @@ h1, h2{
     display: block;
     clear: both;
 }
+#add-book #hide{
+    width: 30px;
+}
+
+#add-book label{
+    line-height: 52px;
+}
+
 
 /* #tabbed-content li{
     display: inline-block;
