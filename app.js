@@ -1,6 +1,8 @@
-// No Code
+
+document.addEventListner('DOMContentLoaded', function(){
 
 const list = document.querySelector('#book-list ul');
+const forms = document.forms;
 
 //  delete books
 list.addEventListener('click', function(e){
@@ -43,6 +45,7 @@ list.appendChild(li);
 			list.style.display = "inital";
 		
         }
+    });
       
         // filter books
 		const searchBar = document.form('search-books').querySelector('input');
@@ -56,8 +59,8 @@ list.appendChild(li);
 				} else {
 					book.style.display = 'none'
 				}
-			})
-        })
+			});
+        });
         
         // tabbed content
 const tabs = document.querySelector('.tabs');
@@ -71,12 +74,9 @@ tabs.addEventListener('click', function(e){
 			} else{
 				panel.classList.remove('active');
 			}
-		})
+		});
 	}
 });
 
-
-
-
-	});
+    })
 	
