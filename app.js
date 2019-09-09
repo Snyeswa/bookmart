@@ -57,7 +57,25 @@ list.appendChild(li);
 					book.style.display = 'none'
 				}
 			})
+        })
+        
+        // tabbed content
+const tabs = document.querySelector('.tabs');
+const panel =document.querySelectorAll('.panel');
+tabs.addEventListener('click', function(e){
+	if(e.target.tagnName == "Li"){
+		const targetPanel = documdent.querySelector(e.target.dataset.target);
+		panels.forEach(function(panel){
+			if(panel == targetPanel){
+				panel.classList.add('active');
+			} else{
+				panel.classList.remove('active');
+			}
 		})
+	}
+});
+
+
 
 
 	});
